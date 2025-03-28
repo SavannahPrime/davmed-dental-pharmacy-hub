@@ -6,7 +6,7 @@ import ServiceCategory from '@/components/services/ServiceCategory';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import TeethColoringFeature from '@/components/services/TeethColoringFeature';
-import { Calendar, Clock, Palette, Shield } from 'lucide-react';
+import { Calendar, Clock, Palette, Shield, Smile } from 'lucide-react';
 
 const DentalServices = () => {
   // Define dental service categories and their services
@@ -247,7 +247,7 @@ const DentalServices = () => {
           {/* Interactive Tooth Coloring Feature */}
           <div className="mb-16">
             <h2 className="text-2xl md:text-3xl font-bold text-davmed-darkblue mb-6 flex items-center">
-              <Palette className="mr-3 text-davmed-accent" />
+              <Smile className="mr-3 text-davmed-accent" />
               Explore Dental Color Options
             </h2>
             <p className="text-gray-600 mb-8 max-w-3xl">
