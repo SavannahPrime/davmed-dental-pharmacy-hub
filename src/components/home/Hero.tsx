@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Clock, MapPin, Phone } from 'lucide-react';
 
 const Hero = () => {
   return (
@@ -19,6 +19,22 @@ const Hero = () => {
             <p className="text-lg md:text-xl text-gray-100">
               Davmed Dental & Pharmacy provides professional dental services and comprehensive pharmacy solutions in Eastleigh.
             </p>
+            
+            <div className="flex flex-col space-y-4 pt-2">
+              <div className="flex items-center space-x-3 text-gray-100">
+                <Clock size={18} className="text-davmed-accent" />
+                <span>Mon-Sat: 8:00 AM - 9:00 PM | Sun: 10:00 AM - 4:00 PM</span>
+              </div>
+              <div className="flex items-center space-x-3 text-gray-100">
+                <MapPin size={18} className="text-davmed-accent" />
+                <span>Eastleigh 1, 3rd Avenue</span>
+              </div>
+              <div className="flex items-center space-x-3 text-gray-100">
+                <Phone size={18} className="text-davmed-accent" />
+                <span>0794 811 811</span>
+              </div>
+            </div>
+            
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Button asChild size="lg" className="bg-white text-davmed-darkblue hover:bg-gray-100">
                 <Link to="/dental-services">
@@ -40,6 +56,9 @@ const Hero = () => {
               />
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-davmed-darkblue/80 to-transparent p-6">
                 <div className="bg-white/90 backdrop-blur-sm rounded-lg p-4 shadow-lg max-w-xs">
+                  <div className="inline-block px-3 py-1 bg-davmed-accent/20 text-davmed-accent rounded-full text-sm font-medium mb-2">
+                    Limited Time Offer
+                  </div>
                   <p className="text-davmed-darkblue font-semibold">Valid from 13th Jan 2025</p>
                   <h3 className="text-2xl font-bold text-davmed-blue">KSH 500 Consultation</h3>
                   <p className="text-gray-700 text-sm">Book your dental checkup today at our special promotional rate!</p>

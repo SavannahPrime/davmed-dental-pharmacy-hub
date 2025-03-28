@@ -17,14 +17,16 @@ const SectionHeading: React.FC<SectionHeadingProps> = ({
 }) => {
   return (
     <div className={cn(
-      'mb-10',
+      'mb-12',
       centered && 'text-center',
       className
     )}>
       <h2 className="text-3xl md:text-4xl font-bold text-davmed-darkblue mb-3">{title}</h2>
-      {subtitle && <p className="text-lg text-gray-600 max-w-3xl">{subtitle}</p>}
-      <div className="w-24 h-1 bg-davmed-accent mt-4 mb-1 rounded-full"></div>
-      <div className="w-12 h-1 bg-davmed-lightblue rounded-full"></div>
+      {subtitle && <p className="text-lg text-gray-600 max-w-3xl mx-auto">{subtitle}</p>}
+      <div className="flex items-center space-x-1 mt-4 mb-1">
+        <div className={cn("h-1 bg-davmed-accent rounded-full", centered ? "w-12 mx-auto" : "w-24")}></div>
+        {!centered && <div className="w-12 h-1 bg-davmed-lightblue rounded-full"></div>}
+      </div>
     </div>
   );
 };
