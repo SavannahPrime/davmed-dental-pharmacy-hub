@@ -1,0 +1,19 @@
+
+.teeth-preview {
+  transition: all 0.3s ease;
+}
+
+.upper-teeth, .lower-teeth {
+  cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0.8;
+}
+
+.upper-teeth.active, .lower-teeth.active {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.upper-teeth:hover, .lower-teeth:hover {
+  opacity: 1;
+}

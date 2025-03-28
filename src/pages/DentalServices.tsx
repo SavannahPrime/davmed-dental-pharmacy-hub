@@ -5,6 +5,7 @@ import SectionHeading from '@/components/ui/SectionHeading';
 import ServiceCategory from '@/components/services/ServiceCategory';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
+import TeethColoringFeature from '@/components/services/TeethColoringFeature';
 
 const DentalServices = () => {
   // Define dental service categories and their services
@@ -123,6 +124,15 @@ const DentalServices = () => {
             title="Our Dental Services"
             subtitle="At Davmed, we provide a wide range of dental services at competitive prices. All our services are performed by experienced professionals using modern equipment."
           />
+
+          {/* Interactive Tooth Coloring Feature */}
+          <div className="mb-16">
+            <h2 className="text-2xl font-bold text-davmed-darkblue mb-6">Explore Dental Color Options</h2>
+            <p className="text-gray-600 mb-8">
+              Try our interactive tool to visualize different dental color options for your treatments. This can help you decide on the perfect shade for your smile makeover.
+            </p>
+            <TeethColoringFeature />
+          </div>
 
           {/* Service categories */}
           <ServiceCategory title="Braces & Alignments" services={bracesServices} />
