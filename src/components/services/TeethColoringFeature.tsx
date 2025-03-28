@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Palette, Droplet } from 'lucide-react';
+import { Tooth, Droplet } from 'lucide-react';
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 
@@ -80,7 +80,7 @@ const TeethColoringFeature = () => {
         <div className="flex-1 p-6 bg-gray-50 border-t md:border-t-0 md:border-l border-gray-100">
           <div className="mb-4">
             <h3 className="flex items-center text-lg font-medium text-davmed-darkblue mb-2">
-              <Palette className="mr-2 h-5 w-5 text-davmed-accent" />
+              <Tooth className="mr-2 h-5 w-5 text-davmed-accent" />
               Color Options
             </h3>
             <p className="text-sm text-gray-600">
